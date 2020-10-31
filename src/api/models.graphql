@@ -1,0 +1,65 @@
+type User {
+  id: ID!
+  username: String!
+  password: String!
+  email: String!
+  gender: String!
+  tel: String!
+  certification: String!
+  address: String!
+  locations: [Location]
+  ddipsU: [Ddip!]!
+  createdAt: String
+  updatedAt: String
+}
+
+type Location{
+  id: ID!
+  location: String!
+  latitude: Float!
+  longitude: Float!
+  user: User!
+  createdAt: String
+  updatedAt: String
+}
+
+type Product{
+  id: ID!
+  name: String!
+  manufacturer: String!
+  category: String!
+  image: String!
+  price: Float!
+  total_quantity: Int!
+  description: String!
+  market: Market! 
+  ddipsP: [Ddip] 
+  createdAt: String
+  updatedAt: String
+}
+
+type Market{
+  id: ID!
+  login_id: String!
+  password: String!
+  name: String!
+  tel_market: String!
+  location: String!
+  products:[Product]
+  createdAt: String
+  updatedAt: String
+}
+
+type Ddip{
+  id: ID! 
+  ddip_num: Int!
+  quantity: Int!
+  payment: Int!
+  pay_successed: Boolean!
+  pay_date: String
+  QR_verified: Boolean!
+  userD: [User!]!
+  product: Product!
+  createdAt: String
+  updatedAt: String
+}

@@ -5,10 +5,10 @@ ddip app
 
 - [X] Sign Up (User) --> S
 - [X] Verify Phone (User) --> S
-- [ ] Sign In (User) --> S
+- [X] Sign In (User) --> S
 - [ ] Update User (User) --> S
 - [ ] Get User (User) --> S
-- [ ] Get Users (User) --> S
+- [ ] Get Users (User) --> S (관리자만 사용)
 - [ ] Create DDIP (Ddip) --> Y
 - [ ] Edit DDIP (Ddip) --> Y
 - [ ] Get Ddip By Product (product_id) (Ddip) --> Y

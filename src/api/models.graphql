@@ -13,6 +13,12 @@ type User {
   updatedAt: String
 }
 
+type Phone{
+  id: ID!
+  tel: String!
+  certification: String!
+}
+
 type Location{
   id: ID!
   location: String!

@@ -3,8 +3,8 @@ ddip app
 
 ## DDIP API
 
-- [ ] Sign Up (User) --> S
-- [ ] Verify Phone (User) --> S
+- [X] Sign Up (User) --> S
+- [X] Verify Phone (User) --> S
 - [ ] Sign In (User) --> S
 - [ ] Update User (User) --> S
 - [ ] Get User (User) --> S

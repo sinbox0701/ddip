@@ -6,8 +6,9 @@ ddip app
 - [X] Sign Up (User) --> S
 - [X] Verify Phone (User) --> S
 - [X] Sign In (User) --> S
-- [ ] Update User (User) --> S
-- [ ] Get User (User) --> S
+- [X] Update User (User) --> S
+- [X] Get User (User) --> S
+- [X] Get Me (User) --> S
 - [ ] Get Users (User) --> S (관리자만 사용)
 - [ ] Create DDIP (Ddip) --> Y
 - [ ] Edit DDIP (Ddip) --> Y

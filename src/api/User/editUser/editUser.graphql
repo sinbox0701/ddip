@@ -1,0 +1,6 @@
+type Mutation{
+    editUser(
+        tel:String
+        address:String
+    ):User!
+}

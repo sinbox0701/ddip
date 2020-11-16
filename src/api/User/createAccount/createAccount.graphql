@@ -10,5 +10,5 @@ type Mutation{
         gender: String!
         tel: String!
         certification:String!
-    ):User!
+    ):Boolean!
 }

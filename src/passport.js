@@ -12,23 +12,14 @@ const jwtOptions = {
  
 const verifyUser = async (payload,done)=>{
     try{
-        const user = await prisma.user({id:payload.id})
+        const user = await prisma.user({id:payload.id});
+        const market = await prisma.market({id:payload.id});
         if(user!==null){
             return done(null,user);
-        }else{
-            return done(null,false);
-        }
-    }catch(error){
-        return done(error,false);
-    }
-};
-
-const verifyMarket = async (payload,done)=>{
-    try{
-        const market = await prisma.market({id:payload.id})
-        if(market!==null){
+        }else if(market!==null){
             return done(null,market);
-        }else{
+        }
+        else{
             return done(null,false);
         }
     }catch(error){
@@ -37,21 +28,15 @@ const verifyMarket = async (payload,done)=>{
 };
 
 export const authenticateJwt = (req,res,next) =>
- passport.authenticate("jwt",{sessions:false}, (error,user,market)=>{
+ passport.authenticate("jwt",{sessions:false}, (error,user)=>{
     if(user){
         req.user = user;//verifyUser로 user를 가져온 후 user가 존재한다면 붙여줌
-    }
-    else if(market){
-        req.market = market;
     }
     next();
 })(req,res,next);
 //{sessions:false}passport에 아무것도 입력 X
 //middleware 함수, parameter --> req, res, next 
-if(verifyUser){ 
-    passport.use(new Strategy(jwtOptions,verifyUser));
-}
-else if(verifyMarket){
-    passport.use(new Strategy(jwtOptions,verifyMarket));
-}
+
+passport.use(new Strategy(jwtOptions,verifyUser));
+
 passport.initialize();

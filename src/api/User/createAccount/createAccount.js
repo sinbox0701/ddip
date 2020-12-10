@@ -32,7 +32,7 @@ export default {
                 where: { tel }
             });
             //입력한 폰번호를 가지고 있는 phone Db의 Instance 불러옴
-            console.log("aaaa");
+            //console.log("aaaa");
             //console.log(certificationN[0].certification);
             console.log(certificationN[0].certification);
             if (certification === certificationN[0].certification) {//입력 인증번호와 불러온 Instance의 인증번호가 같다면

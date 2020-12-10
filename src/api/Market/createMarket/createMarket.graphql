@@ -1,0 +1,8 @@
+type Mutation{
+    createMarket(
+        name: String!
+        password: String!
+        tel_market: String!
+        location: String!
+    ):Market!
+}

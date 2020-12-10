@@ -28,7 +28,7 @@ ddip app
 - [ ] Get Loactions (Location) --> S
 - [ ] Delete Loaction (Location) --> S
 - [x] Create Market (Market) --> Y
-- [ ] Sign In Market (Market) --> Y
+- [x] Sign In Market (Market) --> Y
 - [ ] Edit Market (Market) --> Y
 - [ ] Get Market (Market) --> Y
 - [ ] Get Markets (Market) --> Y

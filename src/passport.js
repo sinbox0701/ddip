@@ -22,16 +22,36 @@ const verifyUser = async (payload,done)=>{
         return done(error,false);
     }
 };
- 
+
+const verifyMarket = async (payload,done)=>{
+    try{
+        const market = await prisma.market({id:payload.id})
+        if(market!==null){
+            return done(null,market);
+        }else{
+            return done(null,false);
+        }
+    }catch(error){
+        return done(error,false);
+    }
+};
+
 export const authenticateJwt = (req,res,next) =>
- passport.authenticate("jwt",{sessions:false}, (error,user)=>{
+ passport.authenticate("jwt",{sessions:false}, (error,user,market)=>{
     if(user){
         req.user = user;//verifyUser로 user를 가져온 후 user가 존재한다면 붙여줌
+    }
+    else if(market){
+        req.market = market;
     }
     next();
 })(req,res,next);
 //{sessions:false}passport에 아무것도 입력 X
 //middleware 함수, parameter --> req, res, next 
- 
-passport.use(new Strategy(jwtOptions,verifyUser));
+if(verifyUser){ 
+    passport.use(new Strategy(jwtOptions,verifyUser));
+}
+else if(verifyMarket){
+    passport.use(new Strategy(jwtOptions,verifyMarket));
+}
 passport.initialize();

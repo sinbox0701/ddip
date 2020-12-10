@@ -12,8 +12,8 @@ export default{
             } = args;
 
             const num = await prisma.marketsConnection().aggregate().count();
-            console.log(num);
-            const login_id = `market ${num}`;
+            //console.log(num);
+            const login_id = `market${num}`;
             const hashedPassword = await bcrypt.hash(password, 5);
 
             const market = await prisma.createMarket({

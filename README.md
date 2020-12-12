@@ -19,7 +19,7 @@ ddip app
 - [ ] Get My Ddips (MyDdip) --> S & Y
 - [x] Get Product (Product) --> Y
 - [x] Get Products (Product) --> Y
-- [ ] Search Products (Product) --> Y
+- [x] Search Products (Product) --> Y
 - [x] Add Product (Product) --> Y
 - [x] Update Product (Product) --> Y
 - [x] Delete Product (Product) --> Y

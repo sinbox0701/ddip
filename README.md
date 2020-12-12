@@ -19,7 +19,7 @@ ddip app
 - [ ] Get My Ddips (MyDdip) --> S & Y
 - [ ] Get Product (Product) --> Y
 - [ ] Get Products (Product) --> Y
-- [ ] Add Product (Product) --> Y
+- [x] Add Product (Product) --> Y
 - [ ] Update Product (Product) --> Y
 - [ ] Caculate Product with amount (Product) --> Y
 - [ ] Search Loaction (Location) --> S

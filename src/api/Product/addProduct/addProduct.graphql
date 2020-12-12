@@ -1,0 +1,11 @@
+type Mutation{
+    addProduct(
+        name: String!
+        manufacturer: String!
+        category: String!
+        image: String!
+        price: Float!
+        total_quantity: Int
+        description: String
+    ): Product!
+}

@@ -30,7 +30,7 @@ export default{
                     where:{id}
                 });
             }else{
-                throw("You can't update Product")
+                throw Error("You can't update Product");
             }
         }
     }

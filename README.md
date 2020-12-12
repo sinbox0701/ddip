@@ -20,7 +20,8 @@ ddip app
 - [ ] Get Product (Product) --> Y
 - [ ] Get Products (Product) --> Y
 - [x] Add Product (Product) --> Y
-- [ ] Update Product (Product) --> Y
+- [x] Update Product (Product) --> Y
+- [ ] Delete Product (Product) --> Y
 - [ ] Caculate Product with amount (Product) --> Y
 - [ ] Search Loaction (Location) --> S
 - [ ] Add Loaction (Location) --> S

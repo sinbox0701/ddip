@@ -30,7 +30,7 @@ export default{
                 total_quantity,
                 description
             });
-            console.log(user);
+            //console.log(user);
 
             return product;
         }

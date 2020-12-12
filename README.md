@@ -17,11 +17,12 @@ ddip app
 - [ ] Add My Ddip (MyDdip) --> S & Y
 - [ ] Edit My Ddip (MyDdip) --> S & Y
 - [ ] Get My Ddips (MyDdip) --> S & Y
-- [ ] Get Product (Product) --> Y
-- [ ] Get Products (Product) --> Y
+- [x] Get Product (Product) --> Y
+- [x] Get Products (Product) --> Y
+- [ ] Search Products (Product) --> Y
 - [x] Add Product (Product) --> Y
 - [x] Update Product (Product) --> Y
-- [ ] Delete Product (Product) --> Y
+- [x] Delete Product (Product) --> Y
 - [ ] Caculate Product with amount (Product) --> Y
 - [ ] Search Loaction (Location) --> S
 - [ ] Add Loaction (Location) --> S

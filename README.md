@@ -24,12 +24,12 @@ ddip app
 - [x] Update Product (Product) --> Y
 - [x] Delete Product (Product) --> Y
 - [ ] Caculate Product with amount (Product) --> Y
-- [ ] Search Loaction (Location) --> S
-- [ ] Add Loaction (Location) --> S
-- [ ] Get Loaction (Location) --> S
-- [ ] Get Loactions (Location) --> S
-- [ ] Delete Loaction (Location) --> S
-- [x] Create Market (Market) --> Y
+- [ ] Search Loaction (Location) --> Front
+- [x] Add Loaction (Location) --> S
+- [ ] Get Loaction (Location) --> Front (search current my location)
+- [x] Get Loactions (Location) --> S
+- [x] Delete Loaction (Location) --> S
+- [x] Create Market (Market) --> Y (Market's Location --> connect Location (needs lat & long))
 - [x] Sign In Market (Market) --> Y
 - [x] Edit Market (Market) --> Y
 - [x] Get My Market (Market) --> Y

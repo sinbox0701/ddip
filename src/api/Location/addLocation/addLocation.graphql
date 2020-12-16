@@ -1,0 +1,7 @@
+type Mutation{
+    addLocation(
+        location: String
+        latitude: Float!
+        longitude: Float!
+    ):Location!
+}

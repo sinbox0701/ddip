@@ -1,0 +1,7 @@
+type Mutation{
+    createDdip(
+        quantity:Int,
+        payment:Int,
+        productId:String
+    ):Ddip!
+}
